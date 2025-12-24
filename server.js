@@ -1,5 +1,5 @@
 const express = require('express');
-const whatsappRoutes = require('./google_cloud_vm_lepapon-lanches/routes/whatsappRoutes');
+const whatsappRoutes = require('./routes/whatsappRoutes');
 
 const app = express();
 
