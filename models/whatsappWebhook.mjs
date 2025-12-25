@@ -322,4 +322,4 @@ class WhatsAppWebhook {
   }
 }
 
-module.exports = WhatsAppWebhook;
+export default WhatsAppWebhook;

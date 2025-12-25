@@ -1,11 +1,12 @@
 // Import Express.js
-const express = require('express');
+import express, { json } from 'express';
+require('dotenv').config();
 
 // Create an Express app
 const app = express();
 
 // Middleware to parse JSON bodies
-app.use(express.json());
+app.use(json());
 
 // Set port and verify_token
 const port = process.env.PORT;
