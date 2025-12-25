@@ -21,7 +21,7 @@ app.get('/webhook', (req, res) => {
     console.log('WEBHOOK VERIFIED');
     res.status(200).send(challenge);
   } else {
-    console.log('WEBHOOK VERIFICATION FAILED');
+    console.log(`WEBHOOK VERIFICATION FAILED: ${token} does not match ${verifyToken}`);
     res.status(403).end();
   }
 });
