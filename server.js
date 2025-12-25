@@ -1,5 +1,5 @@
 import express, { json } from 'express';
-import whatsappRoutes from './routes/whatsappRoutes';
+import router from './routes/whatsappRoutes';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(json());
 
 // Rotas
-app.use('/webhook', whatsappRoutes);
+app.use('/webhook', router);
 
 // Health check
 app.get('/health', (req, res) => {
