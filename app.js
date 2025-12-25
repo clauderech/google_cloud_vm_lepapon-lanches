@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 // Set port and verify_token
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 const verifyToken = process.env.WHATSAPP_VERIFY_TOKEN;
 
 // Route for GET requests
