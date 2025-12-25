@@ -5,7 +5,7 @@
 
 class WhatsAppWebhook {
   constructor() {
-    this.verifyToken = process.env.WHATSAPP_VERIFY_TOKEN || "seu_token_verificacao";
+    this.verifyToken = process.env.WHATSAPP_VERIFY_TOKEN;
     this.phoneNumberId = process.env.WHATSAPP_PHONE_ID;
     this.businessAccountId = process.env.WHATSAPP_BUSINESS_ACCOUNT_ID;
   }
