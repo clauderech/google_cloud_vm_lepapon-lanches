@@ -12,7 +12,7 @@ app.use(json());
 // Set port and verify_token
 const port = process.env.PORT;
 const verifyToken = process.env.WHATSAPP_VERIFY_TOKEN;
-
+console.log(`Using verify token: ${verifyToken}`);
 // Route for GET requests
 app.get('/webhook', (req, res) => {
   const { 'hub.mode': mode, 'hub.challenge': challenge, 'hub.verify_token': token } = req.query;
