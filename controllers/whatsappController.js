@@ -17,7 +17,7 @@ class WhatsAppController {
     try {
       const queryParams = new URLSearchParams(req.url.split("?")[1]);
       const result = this.webhook.verifyWebhook(queryParams);
-
+      console.log("Verificação do webhook:", result);
       if (result.valid) {
         console.log("✅ Webhook verificado com sucesso");
         return res.status(200).send(result.challenge);
