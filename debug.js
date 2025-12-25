@@ -57,7 +57,7 @@ if (allLoaded) {
   
   // Verificar se o arquivo existe
   const fs = require('fs');
-  const envPath = './google_cloud_vm_lepapon-lanches/.env';
+  const envPath = './.env';
   
   if (fs.existsSync(envPath)) {
     console.log('📂 Arquivo .env encontrado em:');
