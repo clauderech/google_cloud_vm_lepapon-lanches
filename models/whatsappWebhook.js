@@ -6,7 +6,7 @@ require('dotenv').config();
 
 class WhatsAppWebhook {
   constructor() {
-    this.verifyToken = process.env.WHATSAPP_VERIFY_TOKEN;
+    this.verifyToken = process.env.WHATSAPP_VERIFY_TOKEN || 'c6e3a799955e4b3121105e666ba44d21b45e111de68bee0d2afb9998500e6df2';
     this.phoneNumberId = process.env.WHATSAPP_PHONE_ID;
     this.businessAccountId = process.env.WHATSAPP_BUSINESS_ACCOUNT_ID;
   }
