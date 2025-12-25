@@ -1,14 +1,14 @@
-import express, { json } from 'express';
-import router from 'routes/whatsappRoutes';
+const express = require('express');
+const whatsappRoutes = require('./routes/whatsappRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware
-app.use(json());
+app.use(express.json());
 
 // Rotas
-app.use('/webhook', router);
+app.use('/webhook', whatsappRoutes);
 
 // Health check
 app.get('/health', (req, res) => {
