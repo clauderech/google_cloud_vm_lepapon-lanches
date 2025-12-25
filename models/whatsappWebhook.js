@@ -2,6 +2,7 @@
  * Webhook para WhatsApp Business API da Meta
  * Gerencia mensagens recebidas e confirmações de envio
  */
+require('dotenv').config();
 
 class WhatsAppWebhook {
   constructor() {

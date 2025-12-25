@@ -1,0 +1,93 @@
+# Dependências
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Variáveis de ambiente
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+
+# Build e dist
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
+.prettierignore
+
+# Arquivos temporários
+tmp/
+temp/
+*.tmp
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+.env.example.local
+
+# Pastas de upload/storage
+uploads/
+storage/
+public/uploads/
+
+# Testes
+.nyc_output/
+coverage/
+*.lcov
+
+# Variáveis secretas
+.secrets/
+secrets/
+*.pem
+*.key
+*.crt
+
+# Node versioning
+.nvmrc.local
+
+# IDEs específicas
+.vscode/settings.json
+.vscode/launch.json
+
+# Pasta de dados locais
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificados e chaves
+certificates/
+keys/
+
+# Backup
+*.backup
+*.bak
+*.orig
