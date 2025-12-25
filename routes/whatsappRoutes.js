@@ -4,7 +4,7 @@
 
 const express = require("express");
 const router = express.Router();
-const WhatsAppController = require("../controllers/whatsappController").default;
+const WhatsAppController = require("../controllers/whatsappController");
 
 const whatsappController = new WhatsAppController();
 
