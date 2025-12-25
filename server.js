@@ -1,5 +1,5 @@
 import express, { json } from 'express';
-import router from './routes/whatsappRoutes';
+import router from 'routes/whatsappRoutes';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
