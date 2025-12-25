@@ -6,7 +6,7 @@ require('dotenv').config();
 
 class WhatsAppWebhook {
   constructor() {
-    this.verifyToken = process.env.WHATSAPP_VERIFY_TOKEN || 'c6e3a799955e4b3121105e666ba44d21b45e111de68bee0d2afb9998500e6df2';
+    this.verifyToken = process.env.WHATSAPP_VERIFY_TOKEN;
     this.phoneNumberId = process.env.WHATSAPP_PHONE_ID;
     this.businessAccountId = process.env.WHATSAPP_BUSINESS_ACCOUNT_ID;
   }
@@ -18,7 +18,7 @@ class WhatsAppWebhook {
     const mode = queryParams.get("hub.mode");
     const token = queryParams.get("hub.verify_token");
     const challenge = queryParams.get("hub.challenge");
-
+    console.log("Verificando webhook:", { mode, token, challenge });
     if (mode === "subscribe" && token === this.verifyToken) {
       return { valid: true, challenge };
     }

@@ -2,7 +2,7 @@
  * Controller para gerenciar webhooks do WhatsApp Business API
  */
 
-const WhatsAppWebhook = require("../models/whatsappWebhook");
+import WhatsAppWebhook from "../models/whatsappWebhook";
 
 class WhatsAppController {
   constructor() {
@@ -410,4 +410,4 @@ class WhatsAppController {
   }
 }
 
-module.exports = WhatsAppController;
+export default WhatsAppController;

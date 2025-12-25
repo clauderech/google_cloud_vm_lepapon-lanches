@@ -2,9 +2,9 @@
  * Rotas para WhatsApp Business API webhook
  */
 
-const express = require("express");
-const router = express.Router();
-const WhatsAppController = require("../controllers/whatsappController");
+import { Router } from "express";
+const router = Router();
+import WhatsAppController from "../controllers/whatsappController";
 
 const whatsappController = new WhatsAppController();
 
@@ -211,4 +211,4 @@ router.get("/whatsapp/message/:messageId", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
